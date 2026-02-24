@@ -22,49 +22,46 @@
 
   <!-- ***** Header ***** -->
 
-  <header class="header" role="banner" id="top">
-    <video autoplay muted loop playsinline class="header__video">
-      <source src="./images/header.mp4" type="video/mp4">
-    </video>
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
-          <li class="nav__item"><a href="#MyCV" class="nav__link">CV</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+<header class="header" role="banner" id="top">
+  <video autoplay muted loop playsinline class="header__video">
+    <source src="./images/header.mp4" type="video/mp4">
+    <img src="./images/header-fallback.jpg" alt="Header Background">
+  </video>
 
-          <!-- Social Media nav links -->
-          <li class="nav__item nav__item--social">
-            <a href="https://www.linkedin.com/in/rosie-barker/" title="Link to Linkedin Profile" class="nav__link">
-              <img src="./images/linkedin.svg" class="nav__social-image" alt="Linkedin" />
-            </a>
-          </li>
-          <li class="nav__item nav__item--social">
-            <a href="https://github.com/rosiebarker/" title="Link to Github Profile" class="nav__link">
-              <img src="./images/github.svg" class="nav__social-image" alt="Github" />
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <div class="row">
+    <nav class="nav" role="navigation">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
+        <li class="nav__item"><a href="#MyCV" class="nav__link">CV</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item nav__item--social">
+          <a href="https://www.linkedin.com/in/rosie-barker/" title="Link to Linkedin Profile" class="nav__link">
+            <img src="./images/linkedin.svg" class="nav__social-image" alt="Linkedin" />
+          </a>
+        </li>
+        <li class="nav__item nav__item--social">
+          <a href="https://github.com/rosiebarker/" title="Link to Github Profile" class="nav__link">
+            <img src="./images/github.svg" class="nav__social-image" alt="Github" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
+  <div class="header__text-box row">
+    <div class="header__text">
+      <div class="header__info">
+        <h1 class="heading-primary"><span>Rosie Barker</span></h1>
+        <p>BSc (Hons) Digital & Technology Solutions graduate</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+      <div class="header__photo-container">
+        <img class="about__photo" src="./images/pp.png" alt="picture of Rosie Barker">
+      </div>
     </div>
-      <div class="header__text-box row">
-        <div class="header__text" style="display: flex; align-items: center; gap: 200px;">
-          
-          <!-- left postition name and desctiption -->
-          <div class="header__info">
-            <h1 class="heading-primary">
-              <span>Rosie Barker</span>
-            </h1>
-            <p>BSc (Hons) Digital & Technology Solutions graduate        </p>
-            <a href="#contact" class="btn btn--pink">Get in touch</a>
-          </div>
-
-          <!-- Right: Profile picture -->
-          <div class="header__photo-container">
-            <img class="about__photo" src="./images/pp.png" alt="picture of Rosie Barker" style="width:300px; height:300px; border-radius:50%; object-fit:cover;">
-          </div>
+  </div>
+</header>
 
         </div>
       </div>
