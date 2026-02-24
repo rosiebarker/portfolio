@@ -6,25 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <!--site title-->
-  <title>
-    Portfolio
-  </title>
-
+  <!-- Site title -->
+  <title>Portfolio</title>
   <meta name="description" content="graduate, hardworking, reliable and trustworthy">
-  <!-- keywords for search engine -->
   <meta name="keywords" content="rosie barker, graduate, junior stack developer, data analyst, react, vite, tailwind, css, html, javascript, php" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-
   <!-- ***** Header ***** -->
-
   <header class="header" role="banner" id="top">
     <video autoplay muted loop playsinline class="header__video">
       <source src="./images/header.mp4" type="video/mp4">
     </video>
+
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
@@ -46,76 +41,134 @@
           </li>
         </ul>
       </nav>
-
     </div>
-      <div class="header__text-box row">
-        <div class="header__text" style="display: flex; align-items: center; gap: 200px;">
-          
-          <!-- left postition name and desctiption -->
-          <div class="header__info">
-            <h1 class="heading-primary">
-              <span>Rosie Barker</span>
-            </h1>
-            <p>BSc (Hons) Digital & Technology Solutions graduate        </p>
-            <a href="#contact" class="btn btn--pink">Get in touch</a>
-          </div>
 
-          <!-- Right: Profile picture -->
-          <div class="header__photo-container">
-            <img class="about__photo" src="./images/pp.png" alt="picture of Rosie Barker" style="width:300px; height:300px; border-radius:50%; object-fit:cover;">
-          </div>
+    <div class="header__text-box row">
+      <div class="header__text" style="display: flex; align-items: center; gap: 200px;">
+        <!-- Left: Name and description -->
+        <div class="header__info">
+          <h1 class="heading-primary"><span>Rosie Barker</span></h1>
+          <p>BSc (Hons) Digital & Technology Solutions graduate</p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
 
+        <!-- Right: Profile picture -->
+        <div class="header__photo-container">
+          <img class="about__photo" src="./images/pp.png" alt="picture of Rosie Barker" style="width:300px; height:300px; border-radius:50%; object-fit:cover;">
         </div>
       </div>
+    </div>
   </header>
 
   <main role="main">
-
     <!-- ***** Work ***** -->
-
     <section class="work" id="work">
       <div class="row">
         <h2>Portfolio</h2>
         <div class="work__boxes">
-          <!-- work__box projects here -->
-          <!-- truncated for brevity -->
+
+          <!-- Project 1 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Snake Game</h3>
+              <p>A basic Snake game created using Unity.</p>
+              <ul class="work__list">
+                <li>UNITY</li>
+                <li>C#</li>
+                <li>GAME DEVELOPMENT</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/rosiebarker/Unity_Snake_Game" class="link__text">
+                  Visit Repository <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rosiebarker/Unity_Snake_Game">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.gif" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Google Chrome Extension</h3>
+              <p>A Chrome extension designed to enhance web accessibility by allowing users to customise their reading experience. With this extension, users can adjust font size, line spacing, change font types, and enable dark mode for improved readability.</p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/rosiebarker/chrome_extension" target="_blank" class="link__text">
+                  Visit Repository <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rosiebarker/chrome_extension" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Google Chrome Extension" />
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Business Intelligence</h3>
+              <p>Worked with a real-world dataset from a small online business, performing data cleaning and transformation to ensure accuracy and consistency. Developed and answered key business questions through data analytics techniques, then created interactive dashboards and visual reports in Power BI to present actionable business insights.</p>
+              <ul class="work__list">
+                <li>PYTHON</li>
+                <li>POWER BI</li>
+                <li>DATA ANALYTICS</li>
+                <li>ETL</li>
+                <li>PANDAS</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/rosiebarker/business_intelligence" target="_blank" class="link__text">
+                  Visit Repository <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rosiebarker/business_intelligence" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-6.png" class="work__image" alt="Power BI Dashboard" />
+            </div>
+          </div>
+
+          <!-- Remaining projects omitted for brevity, but follow same structure -->
+
         </div>
       </div>
     </section>
 
     <!-- ***** My CV ***** -->
-
     <section class="client" id="MyCV">
       <div class="row">
         <h2>My CV</h2>
         <div class="client__cv-viewer">
-          <!-- Embedded PDF viewer -->
           <iframe src="./files/Rosie_Barker_CV.pdf" width="100%" height="600px" style="border: none;"></iframe>
         </div>
       </div>
     </section>
 
     <!-- ***** About ***** -->
-
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- info about myself -->
-            <p>
-              Im a motivated with a passion for technology and problem-solving. During my degree, I really enjoyed building clean, user-friendly applications and discovered an interest in business intelligence modules that focused on data analytics. I'm eager to continue developing my skills and contribute in a work place setting.
-              In my spare time, I enjoy going to the gym, teaching myself piano, and spending time with my family and friends
-            </p>
-            <!--CV Link-->
-              <div class="client__cv-download" style="margin-top: 20px; text-align: center;">
-                <!-- Download link -->
-                <a href="./files/Rosie_Barker_CV.pdf" download class="btn">Download My CV</a>
-              </div>
+            <p>Im a motivated with a passion for technology and problem-solving. During my degree, I really enjoyed building clean, user-friendly applications and discovered an interest in business intelligence modules that focused on data analytics. I'm eager to continue developing my skills and contribute in a work place setting. In my spare time, I enjoy going to the gym, teaching myself piano, and spending time with my family and friends</p>
+            <div class="client__cv-download" style="margin-top: 20px; text-align: center;">
+              <a href="./files/Rosie_Barker_CV.pdf" download class="btn">Download My CV</a>
+            </div>
           </div>
-
           <div class="about__photo-container">
-            <!--profile picture-->
             <img class="about__photo" src="./images/pp.png" alt="picture rosie barker" />
           </div>
         </div>
@@ -124,25 +177,19 @@
   </main>
 
   <!-- ***** Contact ***** -->
-
   <section class="contact" id="contact">
     <div class="row">
       <h2>Get in Touch</h2>
       <div class="contact__info">
-        <p>
-          If you're looking for a dedicated, reliable, and hardworking individual to join your team, I'd love to hear from you!.
-        </p>
-        <!-- send to this email-->
+        <p>If you're looking for a dedicated, reliable, and hardworking individual to join your team, I'd love to hear from you!.</p>
         <a href="mailto:rosietbarker@outlook.com" class="btn">rosietbarker@outlook.com</a>
       </div>
     </div>
   </section>
 
   <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- social links -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/rosie-barker/" title="Link to Linkedin Profile">
@@ -161,8 +208,8 @@
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+
   <script src="./index.js"></script>
-
-
 </body>
 </html>
+
