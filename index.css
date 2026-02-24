@@ -444,13 +444,57 @@ body:not(.user-is-tabbing) a:focus {
     z-index: -1;
 }
 
+/* --------------------------------------- */
+/* ----- Header Mobile Optimization ----- */
+/* --------------------------------------- */
+
 @media(max-width: 500px) {
-    .header {
+
+    /* Center header content and reduce gap */
+    .header__text {
+        position: static;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 2rem var(--gutter-small);
     }
 
+    /* Reduce heading size */
+    .heading-primary {
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+
+    /* Reduce paragraph size and remove transform */
     .header__text p {
-        transform: scale(.8);
+        font-size: 1.8rem;
+        max-width: 90%;
+        margin-bottom: 2rem;
+        transform: none;
+    }
+
+    /* Profile image adjustments */
+    .header__photo-container {
+        margin-top: 2rem;
+    }
+
+    .header__photo-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Adjust button */
+    .btn {
+        padding: 0.8rem 3rem;
+        font-size: 1.6rem;
+    }
+
+    /* Make header height fit content better on small screens */
+    .header {
+        height: auto;
+        padding: var(--gutter-medium) 0;
     }
 }
 
