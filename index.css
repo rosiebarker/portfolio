@@ -451,24 +451,31 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Header Mobile Full Optimization ----- */
 /* --------------------------------------- */
+/* ----- Header Mobile Profile Picture Fix ----- */
 @media(max-width: 500px) {
 
-    /* Header wrapper */
-    .header {
-        height: auto; /* let content determine height */
-        padding: 4rem 2rem; /* more breathing space on top/bottom */
-        text-align: center;
+    /* Reset header text container for mobile */
+    .header__text {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2rem !important;
+        margin: 0 auto;
+        position: static !important;
+        transform: none !important;
     }
 
-    /* Stack the text and photo vertically */
-    .header__text {
-        position: static;
-        transform: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem; /* spacing between text and photo */
-        margin: 0 auto;
+    /* Profile image container */
+    .header__photo-container {
+        margin: 0;
+    }
+
+    /* Profile image itself */
+    .header__photo-container img {
+        width: 180px !important;
+        height: 180px !important;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     /* Heading */
@@ -484,18 +491,6 @@ body:not(.user-is-tabbing) a:focus {
         line-height: 1.5;
         max-width: 90%;
         margin: 0 auto 2rem;
-    }
-
-    /* Profile image */
-    .header__photo-container {
-        margin: 0;
-    }
-
-    .header__photo-container img {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
     }
 
     /* Button */
